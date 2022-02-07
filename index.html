@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>webHome</title>
+   
+    <link rel="stylesheet" href="./dist/main.css">
+</head>
+<body>
+    <form method="post" class="form">
+        
+        <div>
+            <label for="name" class="label">Name</label>
+            <input type="text" id ="name">
+
+        </div>
+        <div>
+            <label for="comments" class="label">Comments</label>
+            <textarea id="forComments" cols="30" rows="10"></textarea>
+            <div class="buttonWraper">
+                <input type="button" value="Post" id="post">
+            </div>
+        </div>
+    <div id="error"></div>
+    </form>
+    <div class="responses">
+        <div class="info inline">
+            <div class="count inline">
+                Responses
+            </div>
+            <div class="sort inline">
+                <span>Newest</span>
+                <span>Most Liked</span>
+                <span>Oldest</span>
+            </div>
+        </div>
+        <hr>
+        <div id="commentsUsers">
+            
+        </div>
+    </div>
+    
+    <ul id="paginator" class="pagination">
+        
+    </ul>
+
+    
+    
+    <script src="./dist/app.js"></script>
+</body>
+</html>
